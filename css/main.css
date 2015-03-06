@@ -63,7 +63,7 @@ h2{
   color: white;
 }
 
-header:hover box-top{
+header:hover .images{
   /* header:hover h1 means only apply the following css when the element
   is being hovered on */
   bottom: 1em;

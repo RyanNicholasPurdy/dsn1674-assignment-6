@@ -1,0 +1,72 @@
+html{
+  box-sizing: border-box;
+}
+
+*, *::before, *::after{
+  box-sizing: inherit;
+}
+
+
+header{
+  position: relative;
+  overflow: hidden;
+  /* overflow cuts off elements that are outside of the visible box area */
+}
+
+.box-top{
+  background-color: #485d82;
+  width: 100%
+  position: relative;
+  /* changes where the coordinate system is aligned t, makes all of the elements children
+  align within it instead of the screen */
+}
+
+img{
+  display: block;
+}
+
+.box-bttm{
+  background-color: #2b3951;
+  position: absolute;
+  width: 100%;
+}
+
+h2{
+  text-align: center;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+/*
+
+h2{
+  color: #fff;
+  text-align: center;
+  width: 100%;
+}
+
+.box-1{
+  position: relative;
+  /* changes where the coordinate system is aligned t, makes all of the elements children
+  align within it instead of the screen */
+}
+
+/*
+
+.box-1 h2{
+  margin: 0;
+  padding: 0;
+  position: relative;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  background-color: blue;
+}

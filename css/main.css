@@ -15,10 +15,20 @@ header{
 
 .box-top{
   background-color: #485d82;
-  width: 100%
+  width: 100%;
   position: relative;
   /* changes where the coordinate system is aligned t, makes all of the elements children
   align within it instead of the screen */
+}
+
+.box-brain{
+  top: 2em;
+  width: 20%;
+  position: absolute;
+  right: 50%;
+  -webkit-transform: translateX(50%);
+  /* webkit allows the translateX command to work in safari but webkit must come first */
+  transform: translateX(50%);
 }
 
 img{

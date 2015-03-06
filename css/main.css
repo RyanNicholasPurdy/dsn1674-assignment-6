@@ -41,6 +41,14 @@ img{
   width: 100%;
 }
 
+.box-head{
+  position: absolute;
+  width: 100%;
+  top: 2em;
+  position: absolute;
+  right: 50%;
+}
+
 h2{
   text-align: center;
   color: white;

@@ -33,9 +33,8 @@ body{
   width: 20%;
   top: 1em;
   right: 40%;
-  -webkit-transform: translateX(50%);
-  /* webkit allows the translateX command to work in safari but webkit must come first */
-  transform: translateX(50%);
+  transition: all 250ms linear;
+  /* transition allows for a timed effect */
 }
 
 .head-left{
@@ -43,6 +42,8 @@ body{
   width: 40%;
   top: -2.5em;
   right: 50%;
+  transition: all 250ms linear;
+  /* transition allows for a timed effect */
 }
 
 .head-right{
@@ -50,6 +51,8 @@ body{
   width: 40%;
   top: -2.5em;
   left: 50%;
+  transition: all 250ms linear;
+  /* transition allows for a timed effect */
 }
 
 .box-bttm{
@@ -63,8 +66,24 @@ h2{
   color: white;
 }
 
-header:hover .images{
+.images:hover .head-left{
   /* header:hover h1 means only apply the following css when the element
   is being hovered on */
-  bottom: 1em;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50px);
+}
+
+.images:hover .head-right{
+  /* header:hover h1 means only apply the following css when the element
+  is being hovered on */
+  -webkit-transform: translateX(50%);
+  transform: translateX(50px);
+}
+
+.images:hover .brain{
+  /* header:hover h1 means only apply the following css when the element
+  is being hovered on */
+  top: -100px;
+  -webkit-transform: translateY(50%);
+  transform: translateY(100px);
 }
